@@ -1,0 +1,82 @@
+.navbar {
+    .bars {
+        @extend %hover-light;
+
+        i,
+        p {
+            display: inline-block;
+
+        }
+
+        &:hover {
+            @extend %hover-light;
+        }
+    }
+
+    .close {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: -300px;
+        opacity: 0;
+        display: block;
+        font-size: 2rem;
+        transition: $default-transition-time;
+
+        &:hover {
+            @extend %hover-light;
+        }
+    }
+
+}
+
+#navbar {
+    display: none;
+
+    &:checked~.menu {
+        right: 0;
+    }
+
+    &:checked~.close {
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+.menu {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    transition: $default-transition-time ease-out;
+    background: lighten($background-color, 1);
+
+    &__items {
+        padding: 30px 25px 0;
+    }
+
+    &__item--wrapper {
+        width: 250px;
+        padding: 10px 0;
+        list-style: none;
+    }
+
+    &__item--wrapper:not(:last-child) {
+        border-bottom: 1px solid $primary-color;
+    }
+
+    &__item--content {
+        color: $primary-color;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        transition: $default-transition-time;
+    }
+
+    &__item--content:hover {
+        @extend %hover-light;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin flexAlign($alignItems: center, $justifyContent: center) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+%hover-light {
+    color: $subprimary-color;
+    user-select: none;
+    cursor: pointer;
+    transition: $default-transition-time;
+}
