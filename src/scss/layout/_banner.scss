@@ -1,3 +1,6 @@
+
+/** Banner **/
+
 .banner {
     @include flexAlign();
     @include setImage('../images/banner.jpg', 33rem);
