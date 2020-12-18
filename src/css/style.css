@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-a:hover, .navbar .bars, .navbar .bars:hover, .navbar .close:hover, .menu__item--content:hover {
+a:hover, .navbar .bars:hover, .navbar .close:hover {
   color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -414,8 +414,6 @@ a {
   .menu__item--wrapper:not(:last-child) {
     border-bottom: 1px solid #999999; }
   .menu__item--content {
-    color: #999999;
-    text-decoration: none;
     display: block;
     width: 100%;
     padding: 10px 0;

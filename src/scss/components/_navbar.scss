@@ -1,7 +1,5 @@
 .navbar {
     .bars {
-        @extend %hover-light;
-
         i,
         p {
             display: inline-block;
@@ -69,15 +67,9 @@
     }
 
     &__item--content {
-        color: $primary-color;
-        text-decoration: none;
         display: block;
         width: 100%;
         padding: 10px 0;
         transition: $default-transition-time;
-    }
-
-    &__item--content:hover {
-        @extend %hover-light;
     }
 }
