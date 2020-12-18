@@ -16,7 +16,7 @@
         bottom: 0;
         right: 0;
         height: 100%;
-        background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+        background: map-get($colors1, banner-gradient);
         opacity: 1;
         animation: show-block 2s 1s both;
         transition: $default-transition-time;

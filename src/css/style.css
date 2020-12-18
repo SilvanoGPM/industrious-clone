@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 a:hover, .navbar .bars:hover, .navbar .close:hover {
-  color: #fff;
+  color: #999999;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

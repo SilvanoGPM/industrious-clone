@@ -36,7 +36,7 @@
 
     &__title {
         @extend %card-content;
-        color: lighten(#3b3b3b, 20);
+        color: map-get($colors2, secondary-color);
         font-size: 1.3rem;
         text-transform: uppercase;
     }

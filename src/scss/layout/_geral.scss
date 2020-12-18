@@ -8,14 +8,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: $primary-color;
+    color: map-get($colors1, primary-color);
     overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
-    color: $subprimary-color;
+    color: map-get($colors1, secondary-color);
 }
 
 a {
@@ -29,9 +29,9 @@ a {
 }
 
 .link {
-    color: $link-color;
+    color: map-get($colors1, link-color);
 
     &:hover {
-        color: $link-color;
+        color: map-get($colors1, link-color);
     }
 }

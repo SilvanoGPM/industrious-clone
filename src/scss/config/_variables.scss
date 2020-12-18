@@ -1,7 +1,14 @@
-$primary-color: darken(#fff, 40);
-$subprimary-color: #fff;
-$link-color: #CE1B28;
-$background-color: #111111;
+$colors1: (primary-color: darken(#fff, 40),
+    secondary-color: #fff,
+    link-color: #CE1B28,
+    background-color: #111111,
+    banner-gradient: linear-gradient(135deg, #ce1b28 0%, #111111 74%),
+);
+
+$colors2: (primary-color: #4b4b4b,
+    secondary-color: lighten(#3b3b3b, 20),
+    background-color: #fff,
+);
 
 $default-transition-time: 0.25s;
 
@@ -9,8 +16,7 @@ $mq-big: "(max-width: 900px)";
 $mq-medium: "(max-width: 725px)";
 $mq-small: "(max-width: 500px)";
 
-$z-index: (
-    important: 100,
+$z-index: (important: 100,
     navigation: 75,
     header: 50,
     banner: 20,
