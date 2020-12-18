@@ -4,6 +4,9 @@ $background-color: #111111;
 
 $default-transition-time: 0.25s;
 
+$mq-medium: "(max-width: 725px)";
+$mq-small: "(max-width: 500px)";
+
 $z-index: (
     important: 100,
     navigation: 75,
