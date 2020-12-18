@@ -7,8 +7,8 @@ const compileStyles = () => {
         .src('./src/scss/style.scss')
         .pipe(sass({
             noCache: true,
-            precision: 8,
-            unixNewlines: true,
+            precision: 4,
+            outputStyle: 'expanded'
         }))
         .pipe(prefix('last 3 version'))
         .pipe(gulp.dest('./src/css'));

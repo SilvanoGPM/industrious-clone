@@ -12,7 +12,7 @@
 }
 
 %hover-light {
-    color: map-get($colors1, primary-color);
+    color: map-get($colors1, secondary-color);
     user-select: none;
     cursor: pointer;
     transition: $default-transition-time;
