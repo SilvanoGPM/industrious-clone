@@ -1,0 +1,60 @@
+.banner {
+    @include flexAlign();
+    @include setImage('../images/banner.jpg', 33rem);
+    position: relative;
+    z-index: map-get($z-index, banner);
+    margin-top: 20px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+        opacity: 1;
+        animation: show-block 2s 1s both;
+        transition: $default-transition-time;
+    }
+
+    &>* {
+        position: relative;
+        z-index: map-get($z-index, banner) + 1;
+    }
+
+    &__inner {
+        text-align: center;
+        opacity: 0;
+        animation: show-element 0.5s 0.25s both;
+        transition: $default-transition-time;
+    }
+
+    &__title {
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 40px;
+        width: 850px;
+    }
+
+    &__description::first-line {
+    
+        text-align: center;
+    }
+}
+
+
+@keyframes show-block {
+    to { opacity: 0.6; }
+}
+
+@keyframes show-element {
+    to { opacity: 1; }
+}

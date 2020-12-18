@@ -3,3 +3,10 @@ $subprimary-color: #fff;
 $background-color: #111111;
 
 $default-transition-time: 0.25s;
+
+$z-index: (
+    important: 100,
+    navigation: 75,
+    header: 50,
+    banner: 20,
+);

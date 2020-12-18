@@ -14,8 +14,8 @@
     }
 
     .close {
-        position: absolute;
-        z-index: 1;
+        position: fixed;
+        z-index: map-get($z-index, navigation) + 1;
         top: 10px;
         right: -300px;
         opacity: 0;
@@ -45,7 +45,8 @@
 
 .menu {
     user-select: none;
-    position: absolute;
+    position: fixed;
+    z-index: map-get($z-index, navigation);
     top: 0;
     right: -300px;
     width: 300px;

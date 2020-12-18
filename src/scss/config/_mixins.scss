@@ -4,6 +4,13 @@
     justify-content: $justifyContent;
 }
 
+@mixin setImage($url, $height) {
+    background: url($url) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: $height;
+}
+
 %hover-light {
     color: $subprimary-color;
     user-select: none;
