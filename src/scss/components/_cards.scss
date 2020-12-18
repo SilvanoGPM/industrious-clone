@@ -38,7 +38,6 @@
         @extend %card-content;
         color: map-get($colors2, secondary-color);
         font-size: 1.3rem;
-        text-transform: uppercase;
     }
 
     &__description {

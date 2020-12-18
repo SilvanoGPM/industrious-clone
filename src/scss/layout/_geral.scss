@@ -16,6 +16,7 @@ h1,
 h2,
 h3 {
     color: map-get($colors1, secondary-color);
+    text-transform: uppercase;
 }
 
 a {
