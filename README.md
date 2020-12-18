@@ -1,6 +1,6 @@
 # Clone do Template Industrious
 
-Este é um site clone do template [Industrious](https://templated.co/industrious) :rocket:.
+Este é um clone do template [Industrious](https://templated.co/industrious) :rocket:.
 
 Além disso, é meu primeiro projeto utilizando o pré-processador Sass.
 
