@@ -1,0 +1,55 @@
+.parallax {
+    $height: 320px;
+
+    @include flexAlign();
+    flex-flow: column;
+    text-align: center;
+    position: relative;
+    height: $height;
+    width: 100%;
+
+    &::before {
+        @include setImage('../images/cta01.jpg', 1280px);
+        content: "";
+        background-attachment: fixed;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $height;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: $height;
+        background: map-get($colors1, opacity-color);
+    }
+
+    &__inner {
+        position: relative;
+        z-index: map-get($z-index, greater);
+    }
+
+    &__title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+
+        @media #{$mq-medium} {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__description {
+        width: 80%;
+        font-size: 0.9rem;
+        text-align: center;
+        color: map-get($colors1, secondary-color);
+        margin: 0 auto;
+    }
+}

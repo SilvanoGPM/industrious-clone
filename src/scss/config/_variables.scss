@@ -2,6 +2,7 @@ $colors1: (primary-color: darken(#fff, 40),
     secondary-color: #fff,
     link-color: #CE1B28,
     background-color: #111111,
+    opacity-color: rgba(#CE1B28, 0.3),
     banner-gradient: linear-gradient(135deg, #ce1b28 0%, #111111 74%),
 );
 
@@ -20,4 +21,5 @@ $z-index: (important: 100,
     navigation: 75,
     header: 50,
     banner: 20,
+    greater: 10,
 );

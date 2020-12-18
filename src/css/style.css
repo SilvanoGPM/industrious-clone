@@ -551,13 +551,6 @@ a {
     max-width: 660px;
     line-height: 30px; }
 
-.card__title, .card__description {
-  max-width: 200px;
-  text-align: center; }
-  @media (max-width: 725px) {
-    .card__title, .card__description {
-      max-width: 80%; } }
-
 .cards {
   width: 100%;
   margin-top: 20px;
@@ -570,6 +563,13 @@ a {
   @media (max-width: 725px) {
     .cards {
       grid-template-columns: repeat(1, 100%); } }
+
+.card__title, .card__description {
+  max-width: 200px;
+  text-align: center; }
+  @media (max-width: 725px) {
+    .card__title, .card__description {
+      max-width: 80%; } }
 
 .card {
   display: -webkit-box;
@@ -588,6 +588,7 @@ a {
           flex-flow: column;
   -webkit-box-shadow: 1px 0 3px rgba(128, 128, 128, 0.5);
           box-shadow: 1px 0 3px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
   height: 436px; }
   .card .link {
     font-size: 4rem; }
@@ -598,3 +599,59 @@ a {
     .card {
       height: 320px;
       margin: 0 20px; } }
+
+.parallax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  position: relative;
+  height: 320px;
+  width: 100%; }
+  .parallax::before {
+    background: url("../images/cta01.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1280px;
+    content: "";
+    background-attachment: fixed;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 320px; }
+  .parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 320px;
+    background: rgba(206, 27, 40, 0.3); }
+  .parallax__inner {
+    position: relative;
+    z-index: 10; }
+  .parallax__title {
+    font-size: 2rem;
+    letter-spacing: 2px; }
+    @media (max-width: 725px) {
+      .parallax__title {
+        font-size: 1.5rem; } }
+  .parallax__description {
+    width: 80%;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto; }

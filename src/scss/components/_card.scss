@@ -7,27 +7,12 @@
     }
 }
 
-.cards {
-    width: 100%;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 2rem;
-
-    @media #{$mq-big} {
-        grid-template-columns: repeat(2, auto);
-    }
-
-    @media #{$mq-medium} {
-        grid-template-columns: repeat(1, 100%);
-    }
-}
-
 .card {
     @include flexAlign();
     color: inherit;
     flex-flow: column;
     box-shadow: 1px 0 3px rgba(gray, 0.5);
+    border-radius: 5px;
     height: 436px;
 
     .link {
