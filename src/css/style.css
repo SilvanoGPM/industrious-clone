@@ -393,6 +393,7 @@ a {
 #navbar {
   display: none; }
   #navbar:checked ~ .menu {
+    opacity: 1;
     right: 0; }
   #navbar:checked ~ .close {
     opacity: 1;
@@ -412,7 +413,8 @@ a {
   -webkit-transition: 0.25s ease-out;
   -o-transition: 0.25s ease-out;
   transition: 0.25s ease-out;
-  background: #141414; }
+  background: #141414;
+  opacity: 0; }
   .menu__items {
     padding: 30px 25px 0; }
   .menu__item--wrapper {

@@ -35,6 +35,7 @@
     display: none;
 
     &:checked~.menu {
+        opacity: 1;
         right: 0;
     }
 
@@ -54,6 +55,7 @@
     height: 100vh;
     transition: $default-transition-time ease-out;
     background: lighten($background-color, 1);
+    opacity: 0;
 
     &__items {
         padding: 30px 25px 0;
