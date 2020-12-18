@@ -1,4 +1,3 @@
-
 /** Geral **/
 
 *,
@@ -26,5 +25,13 @@ a {
 
     &:hover {
         @extend %hover-light;
+    }
+}
+
+.link {
+    color: $link-color;
+
+    &:hover {
+        color: $link-color;
     }
 }
