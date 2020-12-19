@@ -29,8 +29,13 @@ a {
     }
 }
 
+ul, 
+ol {
+    list-style: none;       
+}
+
 .link {
-    color: map-get($colors1, link-color);
+    color: map-get($colors1, primary-color);
 
     &:hover {
         color: map-get($colors1, link-color);

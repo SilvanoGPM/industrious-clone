@@ -11,8 +11,10 @@ $colors2: (primary-color: #4b4b4b,
     background-color: #fff,
 );
 
+$default-border: 1px solid map-get($colors1, primary-color);
 $default-transition-time: 0.25s;
 
+$mq-grid: "(max-width: 950px)";
 $mq-big: "(max-width: 900px)";
 $mq-medium: "(max-width: 725px)";
 $mq-small: "(max-width: 500px)";

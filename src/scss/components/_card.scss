@@ -17,6 +17,7 @@
 
     .link {
         font-size: 4rem;
+        color: map-get($colors1, link-color);
     }
 
     &__title {

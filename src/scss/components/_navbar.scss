@@ -68,7 +68,7 @@
     }
 
     &__item--wrapper:not(:last-child) {
-        border-bottom: 1px solid map-get($colors1, primary-color);
+        border-bottom: $default-border;
     }
 
     &__item--content {
