@@ -21,22 +21,23 @@
         max-width: 660px;
         line-height: 30px;
     }
-}
 
-.cards {
-    width: 100%;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 2rem;
+    .cards {
+        width: 100%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2rem;
 
-    @media #{$mq-big} {
-        grid-template-columns: repeat(2, auto);
+        @media #{$mq-big} {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @media #{$mq-medium} {
+            grid-template-columns: 100%;
+        }
     }
 
-    @media #{$mq-medium} {
-        grid-template-columns: repeat(1, 100%);
-    }
 }
 
 @import "../components/card";

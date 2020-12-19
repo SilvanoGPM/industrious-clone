@@ -654,7 +654,7 @@ a {
   line-height: 30px;
 }
 
-.cards {
+.highlights .cards {
   width: 100%;
   margin-top: 20px;
   display: grid;
@@ -663,14 +663,14 @@ a {
 }
 
 @media (max-width: 900px) {
-  .cards {
+  .highlights .cards {
     grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (max-width: 725px) {
-  .cards {
-    grid-template-columns: repeat(1, 100%);
+  .highlights .cards {
+    grid-template-columns: 100%;
   }
 }
 
@@ -790,4 +790,96 @@ a {
   text-align: center;
   color: #fff;
   margin: 0 auto;
+}
+
+.testemonial {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  color: #4b4b4b;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testemonial__title {
+  color: inherit;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 725px) {
+  .testemonial__title {
+    font-size: 1.5rem;
+    letter-spacing: initial;
+  }
+}
+
+.testemonial__description {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.testemonial .cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+@media (max-width: 950px) {
+  .testemonial .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 725px) {
+  .testemonial .cards {
+    grid-template-columns: 100%;
+  }
+}
+
+.testemonial .card {
+  height: 300px;
+}
+
+.testemonial .card__description {
+  border-left: 5px solid #bebebe;
+  font-style: italic;
+  font-size: 0.8rem;
+  padding: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.testemonial .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testemonial .author__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: -10px;
+}
+
+.testemonial .author__name {
+  margin-right: 5px;
+  color: #CE1B28;
+}
+
+.testemonial .author__name::before {
+  content: ' - ';
+  color: #4b4b4b;
+}
+
+.testemonial .author__name, .testemonial .author__enterprise {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 0.75rem;
 }

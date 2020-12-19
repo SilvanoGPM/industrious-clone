@@ -4,6 +4,12 @@
     justify-content: $justifyContent;
 }
 
+@mixin horizontalDisplayCenter($display: block, $width: 80%) {
+    display: $display;
+    width: $width;
+    margin: 0 auto;
+}
+
 @mixin setImage($url, $height) {
     background: url($url) no-repeat;
     background-size: cover;
