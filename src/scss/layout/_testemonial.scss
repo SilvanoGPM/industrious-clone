@@ -1,3 +1,6 @@
+
+/** Testemonial **/
+
 .testemonial {
     @include horizontalDisplayCenter($width: 80%);
     color: map-get($colors2, primary-color);
